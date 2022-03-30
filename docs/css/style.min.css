@@ -178,11 +178,29 @@ img {
   width: 80px;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .services {
   padding: 108px 0px 140px 0px;
   background: #020100;
   color: #E9D3B0;
-  border: 1px solid #E9D3B0;
 }
 
 .services__discription {
@@ -219,6 +237,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -227,12 +246,12 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 215px;
+  margin: 0px 0px 33px 0px;
+  width: 160px;
+  height: 227px;
 }
 
 .card__item--icon {
-  margin: 0px 30px 20px 0px;
   padding: 15px 0px 0px 0px;
   width: 118px;
   height: 118px;
@@ -240,12 +259,12 @@ img {
   border-radius: 50%;
 }
 
-.services__card p {
+.card__item--text {
   font-family: "Minion Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 62.8%;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.05em;
 }
