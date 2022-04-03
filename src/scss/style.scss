@@ -36,11 +36,10 @@ img{
 }
 
 ._container{
-    max-width:  1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
     box-sizing: content-box;
-    border: 1px solid #E9D3B0;
 }
 
 
@@ -304,7 +303,7 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: fit-content(192px);
-    gap: 120px;
+    grid-column-gap: 120px;
     margin-top: 56px;
 }
 
@@ -388,7 +387,7 @@ img{
     max-height: 60px;
 }
 
-@media(max-width: 394px){
+@media(max-width: 360px){
     .footer__copy{
         height: 80px;
         margin: 0px 0px 20px 0px;
