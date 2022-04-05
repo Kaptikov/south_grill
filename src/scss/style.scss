@@ -306,7 +306,7 @@ ul{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 700px;
+        max-width: 700px;
     }
     // .footer__content
     &__content {
@@ -320,7 +320,6 @@ ul{
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 56px;
-        border: 1px solid #E9D3B0;
     }
     // .footer__contacts
     &__contacts {
@@ -387,6 +386,14 @@ ul{
     font-weight: 400;
     font-size: 30px;
     line-height: 119.38%;
+    
+    &__border {
+        display: flex;
+        align-items: center;
+        max-width: 370px;
+        padding: 0px 0px 0px 20px;
+        //border-bottom: 0.5px solid #FFFFFF;
+    }
 }
 
 .contacts {
@@ -404,6 +411,9 @@ ul{
         line-height: 44.3%;
         letter-spacing: 0.05em;
         color: #E9D3B0;
+    }
+    &__item::first-line{
+        
     }
     &_tel {
         font-weight: 600;
@@ -516,17 +526,29 @@ ul{
 @media(max-width: 390px){
     .footer{
         flex-flow: column;
-        &__content{
+        &__content {
             order: 1;
         }
-        &__nav{
+        &__nav {
             flex-direction: row;
+            justify-content: space-between;
             flex-wrap: wrap;
+            align-items: center;
+            width: 300px;
+            height: 105px;
             order: 3;
-            padding: 20px 0px 0px 0px;
+            padding: 30px 0px 0px 0px;
         }
-        &__search{
+        &__search {
+            height: 100%;
             order: 2;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__icons {
+            position: relative;
+            top: 140px;
         }
     }
 }
