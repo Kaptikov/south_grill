@@ -277,12 +277,50 @@ ul {
   padding-left: 20px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
+  .services__discription {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 548px) {
   .services__discription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
+  }
+  .services__title {
+    font-size: 30px;
+  }
+  .services__subtitle {
+    padding: 29px 0px 31px 0px;
+    font-size: 16px;
+  }
+  .services__card {
+    justify-content: space-between;
+    width: 99.57px;
+    height: 135.24px;
+  }
+
+  .card__icon {
+    width: 73.54px;
+    height: 73.54px;
+  }
+  .card__meat img {
+    width: 89.76px;
+  }
+  .card__grill img {
+    width: 71.05px;
+  }
+  .card__bus img {
+    width: 67.93px;
+  }
+  .card__apron img {
+    width: 65.44px;
+  }
+  .card__text {
+    font-size: 16.2px;
+    line-height: 20px;
   }
 }
 .footer {
