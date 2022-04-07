@@ -15,21 +15,21 @@
 @font-face{
 	font-family: Gilroy;
 	font-display: swap;
-	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face{
-	font-family: Montserrat;
-	font-display: swap;
-	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+	font-weight: 600;
 	font-style: normal;
 }
 @font-face{
 	font-family: Gilroy;
 	font-display: swap;
-	src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
-	font-weight: 600;
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: MinionPro;
+	font-display: swap;
+	src: url("../fonts/MinionPro-Regular.woff2") format("woff2"), url("../fonts/MinionPro-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }

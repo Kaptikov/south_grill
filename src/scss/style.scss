@@ -199,9 +199,7 @@ ul{
     }
     // .services__title
     &__title {
-        font-family: 'Minion Pro';
-        font-style: normal;
-        font-weight: 400;
+        font-family: Minion Pro;
         font-size: 51px;
         line-height: 119.38%;
     }
@@ -253,9 +251,7 @@ ul{
     }
     // .card__text
     &__text {
-        font-family: 'Minion Pro';
-        font-style: normal;
-        font-weight: 400;
+        font-family: Minion Pro;
         font-size: 26px;
         line-height: 30px;
         text-align: center;
@@ -372,6 +368,9 @@ ul{
         align-items: center;
         justify-content: space-between;
         max-width: 700px;
+        font-family: Minion Pro;
+        font-size: 30px;
+        line-height: 119.38%;
     }
     // .footer__content
     &__content {
@@ -404,9 +403,9 @@ ul{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 160px;
         height: 180px;
-        
+        margin-right: auto;
+        padding: 0px 0px 0px 140px;
     }
     // .footer__search
     &__search {
@@ -419,13 +418,14 @@ ul{
     }
     // .footer__subtitle
     &__subtitle {
-        font-family: 'Minion Pro';
+        font-family: Minion Pro;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 119.38%;
         letter-spacing: 0.115em;
         text-transform: uppercase;
+        padding: 0px 0px 0px 15px;
     }
     // .footer__icons
     &__icons {
@@ -433,9 +433,10 @@ ul{
         flex-direction: row;
         justify-content: space-between;
         max-width: 159px;
+        padding: 0px 0px 0px 15px;
     }
     // .footer__icon
-    &__icon{
+    &__icon img {
         width: 23.04px;
         height: 23.04px;
     }
@@ -443,19 +444,14 @@ ul{
     &__container2 {
         border-top: 1px solid #C4C4C4;
         margin-top: 118px;
+        padding: 22px 0px 22px 0px;
     }
 }
 .title {
-    font-family: '';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 119.38%;
-    
     &__border {
         display: flex;
         align-items: center;
-        max-width: 370px;
+        width: 100%;
         padding: 0px 0px 0px 20px;
         //border-bottom: 0.5px solid #FFFFFF;
     }
@@ -476,9 +472,6 @@ ul{
         line-height: 44.3%;
         letter-spacing: 0.05em;
         color: #E9D3B0;
-    }
-    &__item::first-line{
-        
     }
     &_tel {
         font-weight: 600;
@@ -526,6 +519,13 @@ ul{
             width: 153px;
             top: 10px;
             left: 37px;
+            font-family: Minion Pro;
+            font-size: 17.6353px;
+            line-height: 119.38%;
+            /* identical to box height, or 21px */
+
+            text-align: center;
+            letter-spacing: 0.03em;
             background: #020100;
             background-size: contain;
             padding: 0px 10px 0px 10px;
@@ -543,23 +543,15 @@ ul{
         }
     }
 }
-.copyright {
-    // .copyright__text
-    &__text {
-    }
-    // .copyright__logo
-    &__logo {
-    }
-}
 
 .copyright {
-    padding-top: 22px;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 25px;
     // .copyright__text
     &__text {
         font-family: Montserrat;
@@ -568,15 +560,25 @@ ul{
         font-size: 13px;
         line-height: 19px;
         color: #DDDDDD80;
+        padding-right: 35px;
     }
     // .copyright__logo
     &__logo {
     }
 }
 
+@media(max-width: 920px){
+    .footer {
+        &__nav {
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
 @media(max-width: 790px){
-    .footer{
-        &__content{
+    .footer {
+        &__content {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -589,7 +591,7 @@ ul{
 }
 
 @media(max-width: 390px){
-    .footer{
+    .footer {
         flex-flow: column;
         &__content {
             order: 1;
@@ -607,20 +609,29 @@ ul{
         &__search {
             height: 100%;
             order: 2;
+            height: 82px;
         }
         &__subtitle {
             display: none;
         }
         &__icons {
             position: relative;
-            top: 140px;
+            top: 130px;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 281px;
+        }
+        &__icon img {
+            width: 39.98px;
+            height: 39.98px;
         }
     }
-}
-
-@media(max-width: 360px){
-    .footer__copy{
-        height: 80px;
-        margin: 0px 0px 20px 0px;
+    .copyright {
+        align-items: center;
+        height: 58.25px;
+        //padding-left: 0px 0px 0px 0px;
+        &__text {
+            padding-right: 0px;
+        }
     }
 }

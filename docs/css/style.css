@@ -15,22 +15,22 @@
 @font-face {
   font-family: Gilroy;
   font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: Gilroy;
   font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: MinionPro;
+  font-display: swap;
+  src: url("../fonts/MinionPro-Regular.woff2") format("woff2"), url("../fonts/MinionPro-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 *,
@@ -213,9 +213,7 @@ ul {
   text-align: center;
 }
 .services__title {
-  font-family: "Minion Pro";
-  font-style: normal;
-  font-weight: 400;
+  font-family: Minion Pro;
   font-size: 51px;
   line-height: 119.38%;
 }
@@ -258,9 +256,7 @@ ul {
   border-radius: 50%;
 }
 .card__text {
-  font-family: "Minion Pro";
-  font-style: normal;
-  font-weight: 400;
+  font-family: Minion Pro;
   font-size: 26px;
   line-height: 30px;
   text-align: center;
@@ -337,6 +333,9 @@ ul {
   align-items: center;
   justify-content: space-between;
   max-width: 700px;
+  font-family: Minion Pro;
+  font-size: 30px;
+  line-height: 119.38%;
 }
 .footer__content {
   display: flex;
@@ -360,8 +359,9 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 160px;
   height: 180px;
+  margin-right: auto;
+  padding: 0px 0px 0px 140px;
 }
 .footer__search {
   display: flex;
@@ -372,40 +372,36 @@ ul {
   margin: 0px 0px 0px 0px;
 }
 .footer__subtitle {
-  font-family: "Minion Pro";
+  font-family: Minion Pro;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 119.38%;
   letter-spacing: 0.115em;
   text-transform: uppercase;
+  padding: 0px 0px 0px 15px;
 }
 .footer__icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 159px;
+  padding: 0px 0px 0px 15px;
 }
-.footer__icon {
+.footer__icon img {
   width: 23.04px;
   height: 23.04px;
 }
 .footer__container2 {
   border-top: 1px solid #C4C4C4;
   margin-top: 118px;
+  padding: 22px 0px 22px 0px;
 }
 
-.title {
-  font-family: "";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 119.38%;
-}
 .title__border {
   display: flex;
   align-items: center;
-  max-width: 370px;
+  width: 100%;
   padding: 0px 0px 0px 20px;
 }
 
@@ -450,6 +446,12 @@ ul {
   width: 153px;
   top: 10px;
   left: 37px;
+  font-family: Minion Pro;
+  font-size: 17.6353px;
+  line-height: 119.38%;
+  /* identical to box height, or 21px */
+  text-align: center;
+  letter-spacing: 0.03em;
   background: #020100;
   background-size: contain;
   padding: 0px 10px 0px 10px;
@@ -466,13 +468,12 @@ ul {
 }
 
 .copyright {
-  padding-top: 22px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
+  height: 25px;
 }
 .copyright__text {
   font-family: Montserrat;
@@ -481,6 +482,13 @@ ul {
   font-size: 13px;
   line-height: 19px;
   color: #DDDDDD80;
+  padding-right: 35px;
+}
+@media (max-width: 920px) {
+  .footer__nav {
+    margin: 0px;
+    padding: 0px;
+  }
 }
 @media (max-width: 790px) {
   .footer__content {
@@ -513,18 +521,28 @@ ul {
   .footer__search {
     height: 100%;
     order: 2;
+    height: 82px;
   }
   .footer__subtitle {
     display: none;
   }
   .footer__icons {
     position: relative;
-    top: 140px;
+    top: 130px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 281px;
   }
-}
-@media (max-width: 360px) {
-  .footer__copy {
-    height: 80px;
-    margin: 0px 0px 20px 0px;
+  .footer__icon img {
+    width: 39.98px;
+    height: 39.98px;
+  }
+
+  .copyright {
+    align-items: center;
+    height: 58.25px;
+  }
+  .copyright__text {
+    padding-right: 0px;
   }
 }
