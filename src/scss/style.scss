@@ -189,6 +189,9 @@ ul{
     color:#E9D3B0;
     // .services__container
     &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     // .services__discription
     &__discription {
@@ -290,16 +293,20 @@ ul{
 //     }
 // }
 
-@media(max-width: 767px){
+@media(max-width: 670px){
     .services
     {
-        &__discription{
+        &__discription {
             align-items: flex-start;
+            text-align: start;
+        }
+        &__cards {
+            max-width: 400px;
         }
     }
 }
 
-@media(max-width: 548px){
+@media(max-width: 380px){
     .services
     {
         &__discription {
@@ -314,6 +321,9 @@ ul{
         &__subtitle {
             padding: 29px 0px 31px 0px;
             font-size: 16px;
+        }
+        &__cards {
+            max-width: 290px;
         }
         &__card {
             justify-content: space-between;
