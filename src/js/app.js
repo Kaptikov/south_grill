@@ -6,9 +6,9 @@ const burger = document?.querySelector('[data-burger]');
 const menu = document?.querySelector('[data-menu]');
 const menuItems = menu?.querySelectorAll('a')
 const body = document.body;
-const header = document?.querySelector('.header__block');
-const headerHeight = header.offsetHeight;
-document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
+// const header = document?.querySelector('.header__menu');
+// const headerHeight = header.offsetHeight;
+// document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
 burger?.addEventListener('click', () => {
   body.classList.toggle('stop--scroll');
