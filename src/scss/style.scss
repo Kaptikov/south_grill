@@ -1,3 +1,8 @@
+//@import "..node_modules/swiper/swiper.min.css";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+//@import "../../node_modules/swiper/modules/scrollbar/scrollbar.scss";
 @import "fonts";
 
 *,
@@ -87,16 +92,31 @@ ul{
         right: 55px;
         top: 5px; 
         background: none;
+        border: none;
+        stroke: #000000BF;
+        cursor: pointer;
+        
     }
     // .header__block
     &__block {
         height: 57px;
         background: rgba(196, 81, 77, 0.8);
     }
+    &__logo {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__logo img {
+        width: 284px;
+        height: 160px;
+    }
     // .header__menu
     &__menu {
         align-items: center;
         color: white;
+        margin: 0px 0px 178px 0px;
     }
 }
 .burger {
@@ -187,11 +207,12 @@ ul{
         font-size: 18px;
         line-height: 117.8%;
         letter-spacing: 0.05em;
+        padding-right: 421px;
     }
     // .item__logo
-    &__logo {
-        padding-top: 25px;
-    }
+    // &__logo {
+    //     padding-top: 25px;
+    // }
     // .item__tel
     &__tel {
         display: flex;
@@ -214,25 +235,85 @@ ul{
     }
 }
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .stop--scroll {
     overflow: hidden;
+}
+
+
+
+.swiper {
+    //margin-top: 131px;
+    max-width: 100%;
+    height: 100%;
+    //border: 1px solid #E9D3B0;
+    //background-color: #525252;
+    padding-bottom: 31px;
+    color: #fff;
+    &-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Minion Pro';
+        font-size: 80px;
+        line-height: 95px;
+        text-align: center;
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+    }
+    &-wrapper {
+    }
+    &-text {
+        width: 760px;
+    }
+    &-btn {
+        margin-top: 61px;
+        width: 236px;
+        height: 56px;
+        border: none;
+        background-color: #C4504C;
+        border-radius: 7px;
+        color: #fff;
+        font-family: 'Gilroy';
+        font-size: 18px;
+        line-height: 117.8%;
+        letter-spacing: 0.05em;
+    }
+    &-btn:hover {
+        border: 1px solid #fff;
+    }
+    &-pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        // position: absolute;
+        // top: 600px;
+    }
+    &-pagination-bullet {
+        
+        border-radius: 0;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color:#fff;
+        opacity: 1;
+        background: none;
+    }
+    &-pagination-bullet-active {
+        color: #D24E44;
+    }
+    &-scrollbar {
+        margin: 141px 0px 31px 0px;
+        height: 1px;
+        background-color: #fff;
+    }
+    &-scrollbar-drag{
+        cursor: pointer;
+        height: 1px;
+        background-color: #C4504C;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -297,6 +378,38 @@ ul{
     }
     .item__logo {
         display: none;
+    }
+    .swiper {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        &__form_input {
+            display: none;
+        }
+        &__form_input--visible {
+            display: block;
+        }
+        &__btn svg{
+            width: 30px;
+            height: 30px;
+            stroke: #E9D3B0;
+            transform: translateY(-50%);
+        }
+        &__logo {
+            top: 105px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__logo img {
+            width: 115px;
+            height: 65px;
+        }
+        &__block {
+            height: 25px;
+        }
     }
 }
 
