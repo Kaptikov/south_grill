@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + ("каталог товаров") + '</span>';
+      return '<span class="' + className + '">' + ("Каталог товаров") + '</span>';
     },
 
     //type: 'fraction',
