@@ -56,7 +56,6 @@ ul{
 
 
 //------Header------------------------------------------
-
 .header {
     // .header__wrapper
     &__wrapper {
@@ -243,7 +242,7 @@ ul{
 
 .swiper {
     //margin-top: 131px;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     //border: 1px solid #E9D3B0;
     //background-color: #525252;
@@ -320,11 +319,12 @@ ul{
     .burger {
         display: block;
         position: absolute;
-        top: 50px;
+        top: 36px;
         left: 30px;
     }
     .header {
         &__menu {
+            margin: 0px 0px 178px 0px;
             //--header-height: 182px
             display: block;
             position: fixed;
@@ -345,6 +345,35 @@ ul{
         }
         &__menu--visible {
             transform: none;
+        }
+        &__form_input {
+            display: none;
+            width: 20px;
+        }
+        &__form_input--visible {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            background-color: #000;
+            color: #E9D3B0;
+            transition-property: color, transform, padding-left, padding-right;
+            transition-duration: 0.2s, 0.3s, 0.5s, 0.5s;
+            transition: width 0.6s ease-in-out;
+            cursor: pointer;
+        }
+        &__btn {
+            top: 0px;
+            right: 24px;
+            height: 20px;
+        }
+        &__btn svg{
+            width: 30px;
+            height: 30px;
+            stroke: #E9D3B0;
         }
     }
     .menu {
@@ -377,26 +406,39 @@ ul{
     .item__icons {
     }
     .item__logo {
-        display: none;
+        //display: none;
     }
     .swiper {
-        display: none;
+        padding-top: 178px;
+        //display: none;
     }
 }
 
 @media(max-width: 767px) {
     .header {
-        &__form_input {
-            display: none;
+        &__wrapper {
+            padding-top: 119px;
+            height: 521px;
         }
+        
         &__form_input--visible {
             display: block;
+            top: -25px;
+            width: 300px;
+            height: 40px;
+            transition-property: color, transform, padding-left, padding-right;
+            transition-duration: 0.2s, 0.3s, 0.5s, 0.5s;
+            cursor: pointer;
+        }
+        &__btn {
+            top: -20px;
+            right: 24px;
+            height: 20px;
         }
         &__btn svg{
             width: 30px;
             height: 30px;
             stroke: #E9D3B0;
-            transform: translateY(-50%);
         }
         &__logo {
             top: 105px;
@@ -411,11 +453,32 @@ ul{
             height: 25px;
         }
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        &-text {
+            width: 100%;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &-btn {
+            width: 197px;
+            height: 43px;
+            font-size: 16px;
+        }
+        &-pagination {
+            display: none;
+        }
+        &-scrollbar {
+            display: none;
+        }
+    }
 }
 
 //------Services------------------------------------------
 
 .services {
+    height: 100%;
     padding-top: 108px 0px 140px 0px;
     background: #020100;
     color:#E9D3B0;
@@ -525,7 +588,7 @@ ul{
 //     }
 // }
 
-@media(max-width: 670px){
+@media(max-width: 767px){
     .services
     {
         &__discription {
@@ -830,7 +893,7 @@ ul{
     }
 }
 
-@media(max-width: 548px){
+@media(max-width: 767px){
     .footer {
         &__title {
             font-size: 30px;
@@ -838,7 +901,7 @@ ul{
     }
 }
 
-@media(max-width: 390px){
+@media(max-width: 767px){
     .footer {
         flex-flow: column;
         &__content {

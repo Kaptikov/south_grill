@@ -50,13 +50,15 @@ const swiper = new Swiper('.swiper', {
 const burger = document?.querySelector('[data-burger]');
 const menu = document?.querySelector('[data-menu]');
 const input = document?.querySelector('[data-input]');
+const search = document?.querySelector('[data-search]');
 const menuItems = menu?.querySelectorAll('a');
 const body = document.body;
 // const header = document?.querySelector('.header__menu');
 // const headerHeight = header.offsetHeight;
 // document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
-input?.addEventListener('click', () => {
+search?.addEventListener('click', () => {
+  search?.classList.toggle('header__btn--active');
   input?.classList.toggle('header__form_input--visible');
 });
 
