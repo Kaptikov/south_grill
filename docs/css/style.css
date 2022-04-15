@@ -545,7 +545,21 @@ ul {
 .header__menu {
   align-items: center;
   color: white;
-  margin: 0px 0px 178px 0px;
+}
+.header__icons {
+  position: absolute;
+  top: 429px;
+  left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 149px;
+  width: 23px;
+  z-index: 5;
+}
+.header__icons img {
+  width: 23px;
+  height: 23px;
 }
 
 .burger {
@@ -657,6 +671,7 @@ ul {
 }
 
 .swiper {
+  padding-top: 178px;
   width: 100%;
   height: 100%;
   padding-bottom: 31px;
@@ -732,7 +747,7 @@ ul {
   }
 
   .header__menu {
-    margin: 0px 0px 178px 0px;
+    margin-bottom: 178px;
     display: block;
     position: fixed;
     left: 0;
@@ -745,6 +760,7 @@ ul {
     background-color: rgba(196, 81, 77, 0.8);
     transform: translateX(-150%);
     transition: transform 0.6s ease-in-out;
+    z-index: 1000;
     overflow-y: auto;
   }
   .header__menu--visible {
@@ -757,7 +773,7 @@ ul {
   .header__form_input--visible {
     display: block;
     position: absolute;
-    bottom: 0px;
+    bottom: 25px;
     right: 10px;
     width: 200px;
     height: 40px;
@@ -770,7 +786,7 @@ ul {
     cursor: pointer;
   }
   .header__btn {
-    top: 0px;
+    top: -25px;
     right: 24px;
     height: 20px;
   }
@@ -835,6 +851,9 @@ ul {
   }
   .header__block {
     height: 25px;
+  }
+  .header__icons {
+    display: none;
   }
 
   .swiper {
@@ -1160,26 +1179,19 @@ ul {
 }
 @media (max-width: 790px) {
   .footer__content {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    max-width: 50%;
   }
   .footer__search {
     padding: 20px 0px 0px 0px;
   }
 }
 @media (max-width: 767px) {
-  .footer__title {
-    font-size: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .footer {
-    flex-flow: column;
-  }
   .footer__content {
     order: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
   .footer__nav {
     flex-direction: row;
@@ -1189,7 +1201,7 @@ ul {
     width: 100%;
     height: 105px;
     order: 3;
-    padding: 30px 0px 0px 0px;
+    padding-top: 30px;
   }
   .footer__search {
     height: 100%;
@@ -1200,7 +1212,7 @@ ul {
     display: none;
   }
   .footer__icons {
-    padding: 0px 0px 0px 0px;
+    padding-top: 0px;
     position: relative;
     top: 130px;
     justify-content: space-around;
@@ -1210,6 +1222,9 @@ ul {
   .footer__icon img {
     width: 39.98px;
     height: 39.98px;
+  }
+  .footer__title {
+    font-size: 30px;
   }
 
   .copyright {
