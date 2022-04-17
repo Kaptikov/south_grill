@@ -7,12 +7,11 @@
 <body>
     <div class="wrapper">
         @@include('html/header.html', {})
-
-        <main>
+        <main class="page">
+            @@include('html/mainblock.html', {})
             @@include('html/services.html', {})
             @@include('html/catalog.html', {})
         </main>
-
         @@include('html/footer.html', {})
     </div>
     <script src="js/app.min.js"></script>

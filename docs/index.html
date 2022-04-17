@@ -12,28 +12,25 @@
 <body>
     <div class="wrapper">
         <header class="header">
-  <div class="header__wrapper">
-    <div class="header__container _container">
-      <div class="header__form">
-        <form action="" method="get">
-          <input name="s" placeholder="Поиск по сайту" type="search" class="header__form_input" data-input>
-          <button class="header__btn" type="button" data-search aria-label="Показать input" aria-expanded="false">
-            <svg width="18" height="17.95" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.6447 4.17516C12.3935 5.91912 12.3935 8.74665 10.6447 10.4906C8.89581 12.2346 6.06033 12.2346 4.31147 10.4906C2.5626 8.74665 2.5626 5.91912 4.31147 4.17516C6.06033 2.4312 8.89581 2.4312 10.6447 4.17516"
-                stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M10.6122 10.5166L14.9998 14.9499" stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
     <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
       <span class="burger__line"></span>
     </button>
-    <div class="header__block">
+    <div class="header__container">
       <div class="_container">
+        <!-- <div class="header__form">
+          <form action="" method="get">
+            <input name="s" placeholder="Поиск по сайту" type="search" class="header__form-input" data-input>
+            <button class="header__form-btn" type="button" data-search aria-label="Показать input" aria-expanded="false">
+              <svg width="18" height="17.95" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.6447 4.17516C12.3935 5.91912 12.3935 8.74665 10.6447 10.4906C8.89581 12.2346 6.06033 12.2346 4.31147 10.4906C2.5626 8.74665 2.5626 5.91912 4.31147 4.17516C6.06033 2.4312 8.89581 2.4312 10.6447 4.17516"
+                  stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.6122 10.5166L14.9998 14.9499" stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+        </div> -->
         <div class="header__logo">
           <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
@@ -45,12 +42,14 @@
               <a class="menu__link" href="#"><img src="img/logo.svg" width="461px" height="344px" alt=""></a>
             </li> -->
             <li class="menu__item item__tel">
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="17" cy="17" r="16.25" stroke="white" stroke-width="1.5" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M15.3249 17.6751C14.1232 16.4734 13.2172 15.1279 12.6154 13.7629C12.488 13.4742 12.563 13.1363 12.7859 12.9134L13.6271 12.0733C14.3163 11.3841 14.3163 10.4093 13.7144 9.80746L12.5085 8.60163C11.7064 7.79946 10.406 7.79946 9.60387 8.60163L8.93419 9.27131C8.17311 10.0324 7.85573 11.1304 8.06115 12.2191C8.56854 14.903 10.1277 17.8415 12.6431 20.3569C15.1585 22.8723 18.097 24.4315 20.7809 24.9389C21.8696 25.1443 22.9676 24.8269 23.7287 24.0658L24.3973 23.3972C25.1995 22.595 25.1995 21.2947 24.3973 20.4925L23.1925 19.2877C22.5907 18.6858 21.6149 18.6858 21.014 19.2877L20.0866 20.2162C19.8637 20.4391 19.5258 20.5141 19.2371 20.3867C17.8721 19.7838 16.5266 18.8768 15.3249 17.6751Z"
-                  fill="white" stroke="white" stroke-width="1.49991" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <a href="tel:+88612025222">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="16.25" stroke="white" stroke-width="1.5" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.3249 17.6751C14.1232 16.4734 13.2172 15.1279 12.6154 13.7629C12.488 13.4742 12.563 13.1363 12.7859 12.9134L13.6271 12.0733C14.3163 11.3841 14.3163 10.4093 13.7144 9.80746L12.5085 8.60163C11.7064 7.79946 10.406 7.79946 9.60387 8.60163L8.93419 9.27131C8.17311 10.0324 7.85573 11.1304 8.06115 12.2191C8.56854 14.903 10.1277 17.8415 12.6431 20.3569C15.1585 22.8723 18.097 24.4315 20.7809 24.9389C21.8696 25.1443 22.9676 24.8269 23.7287 24.0658L24.3973 23.3972C25.1995 22.595 25.1995 21.2947 24.3973 20.4925L23.1925 19.2877C22.5907 18.6858 21.6149 18.6858 21.014 19.2877L20.0866 20.2162C19.8637 20.4391 19.5258 20.5141 19.2371 20.3867C17.8721 19.7838 16.5266 18.8768 15.3249 17.6751Z"
+                    fill="white" stroke="white" stroke-width="1.49991" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
               <svg width="3" height="34" viewBox="0 0 3 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.56006" y1="-2.69982e-08" x2="1.56006" y2="34" stroke="white" stroke-width="1.5" />
               </svg>
@@ -82,66 +81,79 @@
             </li>
           </ul>
         </nav>
-        <div class="header__icons">
-          <a href="#"><img src="img/vk.svg" alt="" class="header__icon"></a>
-          <a href="#"><img src="img/vk.svg" alt="" class="header__icon"></a>
-          <a href="#"><img src="img/vk.svg" alt="" class="header__icon"></a>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="swiper-text">
-                Попробуй настоящее BBQ на вкус
-              </div>
-              <button class="swiper-btn">
-                В каталог
-              </button>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-text">
-                Попробуй настоящее BBQ на вкус
-              </div>
-              <button class="swiper-btn">
-                В каталог
-              </button>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-text">
-                Попробуй настоящее BBQ на вкус
-              </div>
-              <button class="swiper-btn">
-                В каталог
-              </button>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-text">
-                Попробуй настоящее BBQ на вкус
-              </div>
-              <button class="swiper-btn">
-                В каталог
-              </button>
-            </div>
-
+    </div>
+</header>
+        <main class="page">
+            <div class="page__main-block main-block">
+  <div class="main-block__container _container">
+    <div class="header__form">
+      <form action="" method="get">
+        <input name="s" placeholder="Поиск по сайту" type="search" class="header__form-input" data-input>
+        <button class="header__form-btn" type="button" data-search aria-label="Показать input" aria-expanded="false">
+          <svg width="18" height="17.95" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.6447 4.17516C12.3935 5.91912 12.3935 8.74665 10.6447 10.4906C8.89581 12.2346 6.06033 12.2346 4.31147 10.4906C2.5626 8.74665 2.5626 5.91912 4.31147 4.17516C6.06033 2.4312 8.89581 2.4312 10.6447 4.17516"
+              stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.6122 10.5166L14.9998 14.9499" stroke-opacity="0.75" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-text">
+            Попробуй настоящее BBQ на вкус
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <button class="swiper-btn">
+            В каталог
+          </button>
         </div>
+        <div class="swiper-slide">
+          <div class="swiper-text">
+            Попробуй настоящее BBQ на вкус
+          </div>
+          <button class="swiper-btn">
+            В каталог
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-text">
+            Попробуй настоящее BBQ на вкус
+          </div>
+          <button class="swiper-btn">
+            В каталог
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-text">
+            Попробуй настоящее BBQ на вкус
+          </div>
+          <button class="swiper-btn">
+            В каталог
+          </button>
+        </div>
+
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="main-block__image _ibg">
+      <img src="img/header_bg.jpg" alt="cover">
     </div>
   </div>
-</header>
-
-        <main>
+</div>
             <div class="services">
   <div class="services__container _container">
     <div class="services__discription">
@@ -196,7 +208,6 @@
   </div>
 </div>
         </main>
-
         <footer class="footer">
   <div class="footer__container _container">
     <div class="footer__title title">
