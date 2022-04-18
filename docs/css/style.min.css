@@ -468,6 +468,15 @@ input[type=search]::-webkit-search-results-decoration {
   flex-direction: column;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -657,9 +666,6 @@ ul {
     left: 30px;
   }
 
-  .header__container {
-    background-color: #C4514DCC;
-  }
   .header__menu {
     margin-bottom: 178px;
     display: block;
@@ -731,6 +737,12 @@ ul {
   }
 }
 @media (max-width: 767px) {
+  .header {
+    top: 119px;
+  }
+  .header__container {
+    min-height: 25px;
+  }
   .header__form_input--visible {
     display: block;
     top: -25px;
@@ -751,7 +763,7 @@ ul {
     stroke: #E9D3B0;
   }
   .header__logo {
-    top: 105px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -763,25 +775,8 @@ ul {
     display: none;
   }
 
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-text {
-    width: 100%;
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .swiper-btn {
-    width: 197px;
-    height: 43px;
-    font-size: 16px;
-  }
-  .swiper-pagination {
-    display: none;
-  }
-  .swiper-scrollbar {
-    display: none;
+  .burger {
+    top: -83px;
   }
 }
 .page {
@@ -872,9 +867,31 @@ ul {
   background-color: #C4504C;
 }
 
+@media (max-width: 767px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 83px 0px 96px 0px;
+  }
+  .swiper-text {
+    width: 80%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .swiper-btn {
+    width: 197px;
+    height: 43px;
+    font-size: 16px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .swiper-scrollbar {
+    display: none;
+  }
+}
 .services {
-  height: 100%;
-  padding-top: 234px;
+  padding-top: 108px;
   background: #020100;
   color: #E9D3B0;
 }
@@ -933,7 +950,7 @@ ul {
   border-radius: 50%;
 }
 .card__text {
-  font-family: Minion Pro;
+  font-family: MinionPro;
   font-size: 26px;
   line-height: 30px;
   text-align: center;
@@ -951,6 +968,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .services {
+    padding-top: 52px;
+  }
   .services__discription {
     align-items: flex-start;
     text-align: start;
