@@ -58,8 +58,8 @@ const body = document.body;
 // document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
 search?.addEventListener('click', () => {
-  search?.classList.toggle('header__btn--active');
-  input?.classList.toggle('header__form_input--visible');
+  search?.classList.toggle('header__form-btn--active');
+  input?.classList.toggle('header__form-input--visible');
 });
 
 burger?.addEventListener('click', () => {
