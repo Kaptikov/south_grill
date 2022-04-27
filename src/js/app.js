@@ -6,7 +6,7 @@ import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
 
 //Swiper.use([Navigation, Pagination]);
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.main__swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination, Scrollbar],
   // Optional parameters
@@ -31,21 +31,69 @@ const swiper = new Swiper('.swiper', {
 
   grabCursor: true,
 
+  watchOverflow: true,
+
   // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+  
 
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
   },
-
+  
   //initialSlide: -1,
 });
 
+const swiper2 = new Swiper('.popular-products__swiper', {
+  modules: [Navigation],
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+
+  simulateTouch: true,
+
+  touchRatio: 1,
+
+  touchAngle: 45,
+
+  grabCursor: true,
+
+  watchOverflow: true,
+
+  slidesPerView: 3,
+
+  slidesPerGroup: 1,
+
+  spaceBetween: 42,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 42
+    },
+    // when window width is >= 480px
+    // 480: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 30
+    // },
+    // when window width is >= 640px
+    624: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1130: {
+      slidesPerView: 3,
+      spaceBetween: 42
+    }
+  },
+  loop: true,
+})
 
 const burger = document?.querySelector('[data-burger]');
 const menu = document?.querySelector('[data-menu]');
