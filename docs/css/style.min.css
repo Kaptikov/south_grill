@@ -1720,14 +1720,17 @@ ul {
 .popular-products__link {
   position: absolute;
   bottom: 0;
-  right: 25px;
+  right: 20px;
+  width: 100px;
+  height: 18px;
+  z-index: 10;
 }
 .popular-products__link::before {
   position: absolute;
   content: "";
   width: 10px;
   height: 1px;
-  top: 6.5px;
+  top: 5.5px;
   right: -20px;
   background-color: #fff;
   transform: rotate(35deg);
@@ -1839,11 +1842,12 @@ ul {
     padding: 10px 16px;
   }
   .popular-products__link {
-    top: 0px;
+    top: 0;
     left: 0;
+    height: 20px;
   }
   .popular-products__link::before {
-    top: 6.5px;
+    top: 5.5px;
     left: 110px;
   }
   .popular-products__link::after {
