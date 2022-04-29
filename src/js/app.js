@@ -95,6 +95,36 @@ const swiper2 = new Swiper('.popular-products__swiper', {
   loop: true,
 })
 
+const swiper3 = new Swiper('.sales__swiper', {
+  modules: [Navigation],
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+
+  simulateTouch: true,
+
+  touchRatio: 1,
+
+  touchAngle: 45,
+
+  grabCursor: true,
+
+  watchOverflow: true,
+
+  slidesPerView: 1,
+
+  slidesPerGroup: 1,
+
+  spaceBetween: 42,
+
+  //spaceBetween: 42,
+  loop: true,
+})
+
 const burger = document?.querySelector('[data-burger]');
 const menu = document?.querySelector('[data-menu]');
 const input = document?.querySelector('[data-input]');
