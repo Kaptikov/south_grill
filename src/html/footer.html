@@ -2,7 +2,7 @@
   <div class="footer__container _container">
     <div class="footer__title title">
       <h2>КОНТАКТЫ</h2>
-      <span class="footer__title-line title-line"></span>
+      <span class="footer__title_line title_line"></span>
     </div>
     <div class="footer__content">
       <div class="footer__contacts contacts">
@@ -18,9 +18,11 @@
         <a href="#" class="nav__item nav_gallery">Фотогалерея</a>
       </div>
       <div class="footer__search">
-        <form action="" method="get" class="form__search">
-          <label for="cheese" class="form__search_label form__label">Поиск по сайту</label>
-          <input name="s" placeholder="" type="search" class="form__search_input form__input">
+        <form action="" method="get" class="footer__form">
+          <fieldset class="footer__form_container form__container">
+            <legend>Поиск по сайту</legend>
+            <input class="footer__form_input form__input" type="text" name="name">
+          </fieldset>
         </form>
         <div class="footer__subtitle">
           Мы в социальных сетях:
@@ -38,9 +40,9 @@
       <div class="copyright__text">
         &copy; 2020 Universe, Все права защищены
       </div>
-      <div class="copyright__logo">
+      <a href="#" class="copyright__logo">
         <img src="@img/logo-intec.svg" alt="">
-      </div>
+      </a>
     </div>
   </div>
 </footer>
