@@ -10,12 +10,16 @@
       <div class="feedback__desc">
         <p>Наш менеджер свяжется с Вами в ближайшее время и ответит на все вопросы</p>
       </div>
-      <form class="feedback__form" action="get">
-        <label class="feedback__form_label form__label">Ваше имя</label>
-        <input class="feedback__form_input form__input" type="text" name="name">
+      <form class="feedback__form form" action="get">
+        <fieldset class="feedback__form_container form__container">
+          <legend>Ваше имя</legend>
+          <input class="feedback__form_input form__input" type="text" name="name">
+        </fieldset>
 
-        <label class="feedback__form_label form__label">Телефон </label>
-        <input class="feedback__form_input form__input" type="tel" name="tel">
+        <fieldset class="feedback__form_container form__container">
+          <legend>Телефон</legend>
+          <input class="feedback__form_input form__input" type="text" name="name">
+        </fieldset>
 
         <button class="feedback__form_btn form__btn" type="button">Отправить</button>
       </form>
