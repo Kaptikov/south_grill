@@ -1660,7 +1660,7 @@ ul {
 }
 
 .no-webp .sales {
-  background: #e9d3b0 url(../img/hitsbg.png) no-repeat center; }
+  background: url(../img/hits-bg2.png) no-repeat center; }
 
 .sales {
   color: #241e10;
@@ -3119,7 +3119,7 @@ ul {
 
 .webp .sales-hits { background: #100900 url(../img/hits-bg.webp) no-repeat center/cover; }
 
-.webp .sales { background: #e9d3b0 url(../img/hitsbg.webp) no-repeat center; }
+.webp .sales { background: url(../img/hits-bg2.webp) no-repeat center; }
 
 .webp .feedback__img { background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 18.11%), linear-gradient(90deg, #000000 -1.49%, rgba(0, 0, 0, 0) 14.58%), url(../img/grill.webp) no-repeat center/cover; }
 
