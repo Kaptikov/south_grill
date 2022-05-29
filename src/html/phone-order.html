@@ -14,14 +14,16 @@
       <img class="phone-order__img" src="@img/cow.svg" alt="">
     </div>
     <form class="phone-order__form" action="get">
-      <div class="phone-order__form_container">
-        <label class="phone-order__form_label form__label">Ваше имя</label>
-        <input class="phone-order__form_input form__input" type="text" name="name">
-      </div>
-      <div class="phone-order__form_container">
-        <label class="phone-order__form_label form__label">Телефон</label>
-        <input class="phone-order__form_input form__input" type="tel" name="tel">
-      </div>
+        <fieldset class="phone-order__form_container form__container">
+          <legend>Ваше имя</legend>
+          <input class="phone-order__form_input form__input" type="text" name="name">
+        </fieldset>
+
+        <fieldset class="phone-order__form_container form__container">
+          <legend>Телефон</legend>
+          <input class="phone-order__form_input form__input" type="text" name="name">
+        </fieldset>
+        
       <button class="phone-order__form_btn form__btn" type="button">Отправить</button>
     </form>
   </div>
